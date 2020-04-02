@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/logoventas"
+        android:title="Ventas" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/logogcs"
+        android:title="Gc's" />
+
+    <item
+        android:id="@+id/navigation_comparables"
+        android:icon="@drawable/logocomparables"
+        android:title="Comprables"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/logoajustes"
+        android:title="Ajustes" />
+
+</menu>

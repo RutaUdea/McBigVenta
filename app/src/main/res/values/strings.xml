@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">McBigVenta</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="SeleccionSegement">Seleccione los Segmentos de su Restaurante</string>
+    <string name="IngresarParticipSeg">Porcentaje de Participacion por Segmento</string>
+    <string name="IngresarPArticipBH">Porcentaje de Participacion por Banda Horaria</string>
+    <string name="SelecccionDes24">Selecciones si Posee Desayuno y/0 24 Horas</string>
+    <string name="PorcentajeMostrador">Porcentaje Mostrador</string>
+    <string name="PorcentajeAutomac">Porcentaje Automac</string>
+    <string name="PorcentajeMcEntrega">Porcentaje McEntrega</string>
+    <string name="PorcentajePostres">Porcentaje Centro de Postres</string>
+    <string name="PorcentajeMcCafe">Porcentaje McCafe</string>
+    <string name="SMostrador">Mostrador</string>
+    <string name="SAutomac">Automac</string>
+    <string name="SMcEntrega">McEntrega</string>
+    <string name="SPostres">Centros de Postres</string>
+    <string name="SMcCafe">McCafe</string>
+    <string name="SDesayuno">" " Desayunos " "</string>
+    <string name="SAlmuerzo">" " Almuerzo " "</string>
+    <string name="STarde">" " Tarde " "</string>
+    <string name="SCena">" " Cena " "</string>
+    <string name="SExtend">" " Extend " "</string>
+    <string name="PorcentajeDesayuno">Porcentaje Desayunos</string>
+    <string name="PorcentajeAlmuerzo">Porcentaje Almuerzo</string>
+    <string name="PorcentajeTarde">Porcentaje Tarde</string>
+    <string name="PorcentajeCena">Porcentaje Cena</string>
+    <string name="PorcentajeExtends">Porcentaje Extends</string>
+    <string name="btnSaveConfiguration">Guardar Configuracion y Regresar a Carga de Ventas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

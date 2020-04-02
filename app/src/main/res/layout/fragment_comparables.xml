@@ -1,0 +1,1645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Comparables">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="30px">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp">
+
+                    <TableRow
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Ventas"
+                            android:textColor="@color/whiteTextColor"
+                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/colorPrimaryDark2"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Comparables"
+                            android:textColor="@color/whiteTextColor"
+                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimaryDark"
+                                android:text="Segmento"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="Año Anterior"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="Año Actual"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="%"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="1dp" />
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowMostra">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="@string/SMostrador"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="0.00"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProMostra"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvrealMostra"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:id="@+id/tvDifMostra"
+                                android:textColor="@color/whiteTextColor"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowAuto"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila2"
+                                android:text="@string/SAutomac"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:id="@+id/tvProAuto"
+                                android:textColor="@color/colorPrimary"
+                                android:text="0.00"/>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:textSize="14dp"
+                                android:id="@+id/tvRealAuto"
+                                android:text="0.00"
+                                android:gravity="center"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifAuto"/>
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowMcEn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="@string/SMcEntrega"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:id="@+id/tvProMcEn"
+                                android:textColor="@color/colorPrimary"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealMcEn"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifMcEn"/>
+
+                        </TableRow>
+
+
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowMcCa"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila1"
+                                android:text="@string/SMcCafe"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProMcCa"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvRealMcCa"
+                                android:gravity="center"
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:textSize="14dp"
+                                android:text="0.00" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifMcCa"/>
+
+                        </TableRow>
+
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowK1"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Kiosko 1"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK1"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvRealK1"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="28.6"
+                                android:gravity="center"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:text="0.00"
+                                android:textSize="14dp" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK1"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowK2"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila1"
+                                android:text="Kiosko 2"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK2"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK2"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK2"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowk3"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Kiosko 3"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK3"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK3"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK3"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowK4"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:layout_weight="28.6"
+                                android:background="@color/Fila1"
+                                android:gravity="center"
+                                android:text="Kiosko 4"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="14dp" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK4"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK4"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK4"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowK5"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Kiosko 5"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK5"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK5"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK5"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowK6"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila1"
+                                android:text="Kiosko 6"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK6"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK6"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK6"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowIsla"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Isla"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProIsla"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvRealIsla"
+                                android:gravity="center"
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:textSize="14dp"
+                                android:text="0.00" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifIsla"/>
+
+                        </TableRow>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="1dp" />
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimaryDark"
+                                android:text="Total"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:text="0.00"
+                                android:gravity="center"
+                                android:id="@+id/tvTotalMesPro"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvTotalMesReal"
+                                android:text="0.00"
+                                />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvDifRealMes"
+                                android:layout_height="match_parent"
+                                android:layout_weight="14.3"
+                                android:gravity="center"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+
+
+
+
+
+                    </TableLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="1dp" />
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="30px"
+                android:layout_marginTop="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp">
+
+                    <TableRow
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Gc's"
+                            android:textColor="@color/whiteTextColor"
+                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/colorPrimaryDark2"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Comparables"
+                            android:textColor="@color/whiteTextColor"
+                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="10dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimaryDark"
+                                android:text="Segmento"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="Año Anterior"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="Año Actual"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="%"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="1dp" />
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowMostra2">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="@string/SMostrador"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:text="0.00"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProMostra2"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvrealMostra2"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:id="@+id/tvDifMostra2"
+                                android:textColor="@color/whiteTextColor"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowAuto2"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila2"
+                                android:text="@string/SAutomac"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:id="@+id/tvProAuto2"
+                                android:textColor="@color/colorPrimary"
+                                android:text="0.00"/>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:textSize="14dp"
+                                android:id="@+id/tvRealAuto2"
+                                android:text="0.00"
+                                android:gravity="center"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifAuto2"/>
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowMcEn2"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="@string/SMcEntrega"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:id="@+id/tvProMcEn2"
+                                android:textColor="@color/colorPrimary"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealMcEn2"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifMcEn2"/>
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowMcCa2"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila1"
+                                android:text="@string/SMcCafe"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProMcCa2"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvRealMcCa2"
+                                android:gravity="center"
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:textSize="14dp"
+                                android:text="0.00" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifMcCa2"/>
+
+                        </TableRow>
+
+
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowK12"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Kiosko 1"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK12"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvRealK12"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="28.6"
+                                android:gravity="center"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:text="0.00"
+                                android:textSize="14dp" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK12"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowK22"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila1"
+                                android:text="Kiosko 2"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK22"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK22"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK22"/>
+                        </TableRow>
+
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowk32"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Kiosko 3"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK32"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK32"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK32"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowK42"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:layout_weight="28.6"
+                                android:background="@color/Fila1"
+                                android:gravity="center"
+                                android:text="Kiosko 4"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="14dp" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK42"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK42"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK42"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowK52"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Kiosko 5"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK52"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK52"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK52"/>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/SecFila2"
+                            android:id="@+id/rowK62"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/Fila1"
+                                android:text="Kiosko 6"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProK62"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:id="@+id/tvRealK62"
+                                android:gravity="center"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifK62"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rowIsla2"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark2"
+                                android:text="Isla"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvProIsla2"
+                                android:text="0.00"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvRealIsla2"
+                                android:gravity="center"
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:hint="Ingr. Venta"
+                                android:inputType="numberDecimal"
+                                android:textSize="14dp"
+                                android:text="0.00" />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="14.3"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/whiteTextColor"
+                                android:id="@+id/tvDifIsla2"/>
+
+                        </TableRow>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="1dp" />
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimaryDark"
+                                android:text="Total"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/whiteTextColor"
+                                android:gravity="center"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:text="0.00"
+                                android:gravity="center"
+                                android:id="@+id/tvTotalMesPro2"/>
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:layout_weight="28.6"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorPrimary"
+                                android:id="@+id/tvTotalMesReal2"
+                                android:text="0.00"
+                                />
+
+                            <View android:layout_width="1dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="match_parent"/>
+
+                            <TextView
+                                android:id="@+id/tvDifRealMes2"
+                                android:layout_height="match_parent"
+                                android:layout_weight="14.3"
+                                android:gravity="center"
+                                android:textColor="@color/whiteTextColor"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="1dp" />
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

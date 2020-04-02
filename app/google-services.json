@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663978027435",
+    "firebase_url": "https://mcbigventa.firebaseio.com",
+    "project_id": "mcbigventa",
+    "storage_bucket": "mcbigventa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663978027435:android:9ac3781e320301247bcaee",
+        "android_client_info": {
+          "package_name": "com.example.mcbigventa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663978027435-l7fcr2f9736v4eoqibgpd6hvinreov6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mcbigventa",
+            "certificate_hash": "6ce48990a9f426adead35e4e4773aa474855ee19"
+          }
+        },
+        {
+          "client_id": "663978027435-guimfvrvh2gcbonc1nu73kuameq4knvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-9PK6UDF0Q4WaXHu-sqtJmA-MxNtNMbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663978027435-guimfvrvh2gcbonc1nu73kuameq4knvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

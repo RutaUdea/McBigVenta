@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorPrimaryDark2">#F2455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="primary_text">#212121</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="whiteTextColor">#FFFFFF</color>
+    <color name="rojoT">#A1FF0000</color>
+    <color name="rojobtn">#A6FF0000</color>
+    <color name="verdeT">#8000FF2B</color>
+    <color name="Button">#B376FF03</color>
+    <color name="FilaPrincipal">#E6455A64</color>
+    <color name="Fila1">#D9455A64</color>
+    <color name="Fila2">#CC455A64</color>
+    <color name="SecFila2">#41757575</color>
+    <color name="FondoCard">#D9FFFFFF</color>
+    <color name="VerdeFAB">#007a3b</color>
+</resources>

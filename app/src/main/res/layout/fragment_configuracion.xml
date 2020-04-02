@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Configuracion">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/backgroungtopconfig"
+            android:layout_gravity="top"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:src="@drawable/backgroundbutton"
+            android:layout_gravity="bottom"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="140dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="30px"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/FondoCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SeleccionSegement"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                android:text="@string/SelecccionDes24"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SDesayuno"
+                    android:id="@+id/chbDesayuno"
+                    android:layout_marginRight="50dp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chbExtends"
+                    android:text="@string/SExtend"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="30px"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/FondoCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SMostrador"
+            android:checked="true"
+            android:id="@+id/chbMostrador"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/lMostrador"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/PorcentajeMostrador"
+                android:id="@+id/edPorcMostrador"
+                android:textColor="@color/primary_text"
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IngresarPArticipBH"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TableRow
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/SAlmuerzo"
+                        android:inputType="numberDecimal"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:textColor="@color/whiteTextColor"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:id="@+id/etPorcAlmMostra"
+                        android:textColor="@color/primary_text"
+                        android:inputType="numberDecimal"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/STarde"
+                        android:gravity="center"
+                        android:textColor="@color/whiteTextColor"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/etPorcTardeMostra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/SCena"
+                        android:gravity="center"
+                        android:textColor="@color/whiteTextColor"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:id="@+id/etPorcCenaMostra"
+                        android:textColor="@color/primary_text"
+                        android:inputType="numberDecimal"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lDesayunoMostra"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="@string/SDesayuno"
+                        android:textColor="@color/whiteTextColor"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="00.0"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/edPorDesaMostra"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/lExtendMostra"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/SExtend"
+                        android:gravity="center"
+                        android:textColor="@color/whiteTextColor"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:id="@+id/etPorcExtendsMostra"
+                        android:textColor="@color/primary_text"
+                        android:inputType="numberDecimal"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="30px"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/FondoCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SAutomac"
+            android:id="@+id/chbAutomac"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/lAutomac"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/PorcentajeAutomac"
+                android:id="@+id/edPorcAutomac"
+                android:textColor="@color/primary_text"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IngresarPArticipBH"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SAlmuerzo"
+                            android:inputType="numberDecimal"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcAlmAuto"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/STarde"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcTardeAuto"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SCena"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcCenaAuto"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lDesayunoAuto"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:text="@string/SDesayuno"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="00.0"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/edPorDesaAuto"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/lExtendAuto"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SExtend"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcExtendsAuto"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="30px"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/FondoCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SMcEntrega"
+            android:id="@+id/chbMcEntrega"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/lMcEntrega"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/PorcentajeMcEntrega"
+                android:id="@+id/etPorcMcEntrega"
+                android:textColor="@color/primary_text"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IngresarPArticipBH"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SAlmuerzo"
+                            android:inputType="numberDecimal"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcAlmMcEn"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/STarde"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcTardeMcEn"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SCena"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcCenaMcEn"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lDesayunoMcEn"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:text="@string/SDesayuno"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="00.0"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/edPorDesaMcEn"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/lExtendMcEn"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SExtend"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcExtendsMcEn"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="30px"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/FondoCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SMcCafe"
+        android:id="@+id/chbMcCafe"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/lMcCafe"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/PorcentajeMcCafe"
+                android:id="@+id/etPorcMcCafe"
+                android:textColor="@color/primary_text"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/IngresarPArticipBH"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SAlmuerzo"
+                            android:inputType="numberDecimal"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcAlmMcCa"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/STarde"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcTardeMcCa"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SCena"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcCenaMcCa"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lDesayunoMcCa"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:text="@string/SDesayuno"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="00.0"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/edPorDesaMcCa"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/lExtendMcCa"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/SExtend"
+                            android:gravity="center"
+                            android:textColor="@color/whiteTextColor"
+                            android:textStyle="bold"
+                            android:background="@color/colorPrimaryDark"
+                            android:textSize="14dp"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="0.00"
+                            android:id="@+id/etPorcExtendsMcCa"
+                            android:textColor="@color/primary_text"
+                            android:inputType="numberDecimal"
+                            android:textSize="14dp"/>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="30px"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/FondoCard">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="Seleccione los Kioskos que Posee"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Isla"
+                            android:id="@+id/cbxIsla"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kiosko 1"
+                            android:id="@+id/cbxK1"
+                            android:layout_marginLeft="10dp"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kiosko 2"
+                            android:id="@+id/cbxK2"
+                            android:layout_marginLeft="10dp"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kiosko 3"
+                            android:id="@+id/cbxK3"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kiosko 4"
+                            android:id="@+id/cbxK4"
+                            android:layout_marginLeft="10dp"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kiosko 5"
+                            android:id="@+id/cbxK5"
+                            android:layout_marginLeft="10dp"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kiosko 6"
+                            android:id="@+id/cbxK6"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/btnSaveConfiguration"
+                android:id="@+id/btnSaveConfig"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>
