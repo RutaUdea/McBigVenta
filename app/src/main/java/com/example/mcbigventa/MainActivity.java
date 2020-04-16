@@ -49,11 +49,6 @@ public class MainActivity extends AppCompatActivity {
                     active = fragment2;
                     return true;
 
-                case R.id.navigation_comparables:
-                    fm.beginTransaction().hide(active).show(fragment4).commit();
-                    active = fragment4;
-                    return true;
-
                 case R.id.navigation_notifications:
                     fm.beginTransaction().hide(active).show(fragment3).commit();
                     active = fragment3;

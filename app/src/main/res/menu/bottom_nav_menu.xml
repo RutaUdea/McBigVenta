@@ -12,11 +12,6 @@
         android:title="Gc's" />
 
     <item
-        android:id="@+id/navigation_comparables"
-        android:icon="@drawable/logocomparables"
-        android:title="Comprables"/>
-
-    <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/logoajustes"
         android:title="Ajustes" />

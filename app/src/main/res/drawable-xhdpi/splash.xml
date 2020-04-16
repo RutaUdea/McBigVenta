@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/whiteTextColor">
+    </item>
+    <item android:drawable="@drawable/logosplashmcbigventa"
+        android:width="250dp"
+        android:height="150dp"
+        android:gravity="center">
+
+</item>
+</layer-list>
